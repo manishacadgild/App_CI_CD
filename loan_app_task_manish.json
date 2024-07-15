@@ -1,13 +1,13 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:581763038635:task-definition/loan_app_task:2",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:080485850787:task-definition/loan_app_task_manish:2",
     "containerDefinitions": [
         {
-            "name": "loan_app_container",
-            "image": "581763038635.dkr.ecr.us-east-1.amazonaws.com/loan_flask_app:latest",
+            "name": "loan_app_container_manish",
+            "image": "080485850787.dkr.ecr.us-east-1.amazonaws.com/loan_flask_appman:latest",
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "loan_app_container-80-tcp",
+                    "name": "loan_app_container_manish-80-tcp",
                     "containerPort": 80,
                     "hostPort": 80,
                     "protocol": "tcp",
@@ -23,7 +23,7 @@
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
-                    "awslogs-group": "/ecs/loan_app_task",
+                    "awslogs-group": "/ecs/loan_app_task_manish",
                     "awslogs-create-group": "true",
                     "awslogs-region": "us-east-1",
                     "awslogs-stream-prefix": "ecs"
@@ -33,8 +33,8 @@
             "systemControls": []
         }
     ],
-    "family": "loan_app_task",
-    "executionRoleArn": "arn:aws:iam::581763038635:role/ecsTaskExecutionRole",
+    "family": "loan_app_task_manish",
+    "executionRoleArn": "arn:aws:iam::080485850787:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
     "revision": 2,
     "volumes": [],
@@ -79,7 +79,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-07-08T16:12:26.680Z",
-    "registeredBy": "arn:aws:sts::581763038635:federated-user/shivank.agrawal_1@scaler.com",
+    "registeredAt": "2024-07-15T11:18:26.465Z",
+    "registeredBy": "arn:aws:sts::080485850787:federated-user/scaler11batchawslabuser62",
     "tags": []
 }
