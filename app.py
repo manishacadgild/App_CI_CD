@@ -9,7 +9,7 @@ def hello_world():
 
 @app.route("/ping", methods =['GET'])
 def ping():
-    return "<p>why are you pinging me manish</p>"
+    return "<p>why are you pinging me manish jha </p>"
 
 model_pickle = open("./classifier.pkl", "rb")
 clf = pickle.load(model_pickle)
